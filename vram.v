@@ -25,7 +25,7 @@ module VRAM(
     begin
       if (writeEnable_p1)
         VRAM[address_p1] <= dataIn_p1;
-      else
+      //else
         dataOut_p1 <= VRAM[address_p1];
     end
   end
@@ -34,7 +34,7 @@ module VRAM(
   begin
     if (writeEnable_p2)
       VRAM[address_p2] <= dataIn_p2;
-    else
+    //else
       dataOut_p2 <= VRAM[address_p2];
   end
 endmodule

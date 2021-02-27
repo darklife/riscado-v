@@ -23,10 +23,10 @@ module ROM(
   // Acesso a memória.
   always @(posedge clk)
   begin
-    if (enable)
-	 begin
+    //if (enable)
+	 //begin
       dataOut <= memory[daddr];
-    end
+    //end
   end
 endmodule
   

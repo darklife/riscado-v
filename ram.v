@@ -24,10 +24,10 @@ module RAM(
 	   begin
         memory[daddr] <= dataIn;
       end
-		else
-		begin
+		//else
+		//begin
 			dataOut <= memory[daddr];
-		end
+		//end
     end
   end
 endmodule
